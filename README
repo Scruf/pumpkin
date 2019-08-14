@@ -1,0 +1,14 @@
+In order to complete this assignmnet I used serverless framework to create the endoint.
+The handler is located in the show.py file
+For database I went with MySQL server which is running in Docker container
+For styling I used Pep8. Some of the urls were left unchanged and it will probablly trip the linter.
+However the rest of the Pep8 concerns were addressed
+For unit test simple tests were wrote using pytest
+In order to run the application you will need to install requirements.txt using 
+    pip3 install -r requirements.txt
+Than you would need to install Js dependencies using
+    npm install
+After the requirements are installed run the bash script runner.sh. It will start up the environment
+It will take about 4 minutes to start due to the fact that mysql needs to start properly.
+While its running youll see the output of the test pets being inserted.
+Once its done you can test the endpoint

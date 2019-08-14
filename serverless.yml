@@ -1,0 +1,27 @@
+org: ekozitski
+app: pumpkin-app
+service: pumpkin
+
+plugins:
+  - serverless-offline-python
+
+package:
+  exclude:
+    - requirements.txt
+    - serverless.yml
+
+provider:
+  name: aws
+  runtime: python3.6
+
+functions:
+  show:
+    handler: show.handler
+    environment:
+    - AWS_ACCESS_KEY_ID=foobar
+    - AWS_DEFAULT_REGION=foobar
+    - AWS_SECRET_ACCESS_KEY=foobar
+    events:
+      - http:
+          path: /{id}
+          method: get

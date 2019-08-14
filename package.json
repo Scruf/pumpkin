@@ -1,0 +1,20 @@
+{
+  "name": "pumpkin_sql",
+  "version": "1.0.0",
+  "description": "Pumpkin assignment using MySql as database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Egor Kazitski",
+  "license": "ISC",
+  "plugins": [
+    "serverless-dynamodb-local"
+  ],
+  "devDependencies": {
+    "serverless": "^1.49.0",
+    "serverless-dynamodb-local": "^0.2.10",
+    "serverless-offline": "^5.10.1",
+    "serverless-offline-python": "^3.22.1"
+  }
+}

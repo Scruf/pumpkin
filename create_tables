@@ -1,0 +1,18 @@
+create table Pet
+(
+	id varchar(32) not null,
+	age int null,
+	breed varchar(35) null,
+	zipcode int null,
+	name varchar(50) null,
+	gender varchar(7) null,
+	species varchar(30) null
+);
+
+create unique index Pet_id_uindex
+	on Pet (id);
+
+alter table Pet
+	add constraint Pet_pk
+		primary key (id);
+
